@@ -22,8 +22,7 @@ def generate_frames():
 
 @app.route('/')
 def index():
-    components.html("<html><body><h1>Hello, World</h1></body></html>", width=200, height=200)
-#     return render_template('index.html')
+    return render_template('index.html')
 
 
 @app.route('/video')
