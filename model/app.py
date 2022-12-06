@@ -1,11 +1,11 @@
 from flask import Flask, render_template, Response, request, redirect, session, url_for
 import cv2
-from flask_bootstrap import Bootstrap5
+from flask_bootstrap import Bootstrap
 
 import videotester
 
 app = Flask(__name__)
-bootstrap = Bootstrap5(app)
+bootstrap = Bootstrap(app)
 camera = cv2.VideoCapture(0)
 
 
