@@ -5,6 +5,7 @@ from keras.models import load_model
 # from tensorflow.keras.utils import img_to_array
 # from tensorflow.keras.preprocessing import image
 # import os
+import tensorflow as tf
 import cv2
 import numpy as np
 # from keras.preprocessing import image
@@ -13,7 +14,7 @@ warnings.filterwarnings("ignore")
 # from keras.preprocessing.image import load_img, img_to_array
 
 # load model
-model = load_model(r"\best_model.h5")
+model = tf.keras.models.load_model("best_model.h5")
 
 
 face_haar_cascade = cv2.CascadeClassifier(
